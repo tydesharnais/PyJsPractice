@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<body>
+<p id="output"></p>
+<script>
+var myArray = [2,4,6,8,16,32,64,128,256];
+
+var sum = 0;
+for (var i = 0; i < myArray.length; i++)
+{
+  sum += myArray[i];
+}
+
+document.getElementById("output").innerHTML = sum/myArray.length;
+</script>
+</body>
+</html>

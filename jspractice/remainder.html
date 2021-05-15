@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<body>
+<script>
+function myFunction()
+{
+  var num = parseInt(document.getElementById("num").value);
+  var result = num;
+  while(result >= 7)
+  {
+    result -= 7;
+    document.getElementById("output").innerHTML += result + "<br />";
+  }
+  document.getElementById("output").innerHTML += "Answer: " + result;
+}
+</script>
+Number: <input type="text" id="num">
+
+<button onclick="myFunction()">Run</button>
+<p id="output"></p>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<body>
+<script>
+var people = [];
+function UpdateList()
+{
+  var name = document.getElementById("fullname").value;
+  people.push(name);
+  people.sort();
+  document.getElementById("output").innerHTML = "";
+  for (var i = 0; i < people.length; i++)
+  {
+    document.getElementById("output").innerHTML += people[i] + "<br/>";
+  }
+
+}
+</script>
+Name: <input type="text" id="fullname">
+<button onclick="UpdateList()">Insert</button>
+<h3>Names <h3/><hr />
+<p id="output"></p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<body>
+<script>
+function myFunction()
+{
+  var num = parseInt(document.getElementById("num").value);
+  var sum = 0;
+  for (var i = 1; i <= num; i++)
+  {
+    sum = sum + i;
+  }
+  document.getElementById("output").innerHTML = sum;
+}
+</script>
+Number: <input type="text" id="num">
+
+<button onclick="myFunction()">Run</button>
+<p id="output"></p>
+
+</body>
+</html>

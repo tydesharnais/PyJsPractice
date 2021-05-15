@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<body>
+<script>
+function Person(name, age, sex)
+{
+	this.name = name;
+	this.age = age;
+	this.sex = sex;
+	this.display = function(){
+		alert('Name: '+this.name+',Age: '+this.age);
+	}
+
+}
+var person1 = new Person("Fred",25, "M");
+var person2 = new Person("Lucy",28, "F");
+person1.display();
+person2.display();
+</script>
+</body>
+</html>

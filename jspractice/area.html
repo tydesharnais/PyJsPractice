@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<script>
+function getCylArea(radius, height)
+{
+	return (3.14 * (radius * radius) ) * height;
+}
+
+function myFunction()
+{
+	var r = parseInt(document.getElementById("num1").value);
+	var h = parseInt(document.getElementById("num2").value);
+	document.getElementById("output").innerHTML = getCylArea(r,h)+"<sup>3</sup>";
+}
+</script>
+Radius: <input type="text" id="num1">
+Height: <input type="text" id="num2">
+<button onclick="myFunction()">Calculate Cylinder Area</button>
+
+<p id="output"></p>
+
+</body>
+</html>
